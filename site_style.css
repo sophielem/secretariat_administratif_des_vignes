@@ -8,7 +8,7 @@ main{background-color: #f9f2e3;}*/
   --grey: #939191;
 }
 
-body{margin: 0; font-family:'Fira Sans',Verdana,Tahoma,sans-serif; background-color:#e6e3e3;}
+body{margin: 0; font-family:'Fira Sans',Verdana,Tahoma,sans-serif; background-color:#ead8c2;}
 
 
 .bandeau{height: 500px; width; auto; margin-left: 10%; margin-top:50px;}
@@ -30,7 +30,7 @@ body{margin: 0; font-family:'Fira Sans',Verdana,Tahoma,sans-serif; background-co
 .bulle_content{font-size:12px;}
 
 
-article{border-radius: 5px;  box-shadow: 5px 5px 20px var(--grey);margin: 20px 8%; padding: 10px 10px;}
+article{border-radius: 5px;  box-shadow: 5px 5px 20px var(--grey);margin: 20px 8%; padding: 10px 10px; background-color: #f7f5f4;}
 article h2{color: var(--main-color);}
 
 
