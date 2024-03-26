@@ -32,14 +32,22 @@ body{margin: 0; font-family:'Fira Sans',Verdana,Tahoma,sans-serif; background-co
 
 article{border-radius: 5px;  box-shadow: 5px 5px 20px var(--grey);margin: 20px 8%; padding: 10px 10px; background-color: #f7f5f4;}
 article h2{color: var(--main-color);}
+.content_icon{font-size: 80px;}
+.content_icon span{width: min-content; color:var(--second-color);transition: color 2s, rotate 2s;}
+.content_icon span:nth-child(odd){rotate: 20deg;margin-left: 20px;}
+.content_icon span:nth-child(even){rotate: -20deg; margin-left: 25%;}
+.content_icon.flexEnd span:nth-child(odd){margin-right: 20px;}
+.content_icon.flexEnd span:nth-child(even){margin-right: 25%;}
 
-
+.content_icon span:nth-child(odd):hover{color:var(--main-color); rotate: -50deg;}
+.content_icon span:nth-child(even):hover{color:var(--main-color); rotate: 50deg;}
 
 .flexParent{display: flex; flex-direction: row;}
 .flexHalf{width: 50%;}
 .flexColumn{flex-direction: column;}
 .flexAround{justify-content: space-around;}
 .flexCenter{justify-content: center;}
+.flexEnd{align-items:flex-end;}
 .verticalAlign{margin-top: 50%; transform: translateY(-50%);}
 .ml_10{margin-left: 10px;}
 .mt_50{margin-top: 50px;}
@@ -47,8 +55,9 @@ article h2{color: var(--main-color);}
 .wp_100{width: 100%;}
 .wp_75{width: 75%;}
 
+.btn{background-color:var(--second-color); color: white; font-size: 18px; padding: 20px; border-radius: 90px;text-decoration: none;}
 
-footer{background-color:var(--main-color);height: 100px; width: 100%; color: white; text-align: center;}
+footer{background-color:var(--main-color);height: 100px; width: 100%; color: white; text-align: center; padding: 20px 20px;}
 
 @media screen and (max-width: 800px) {
   .filter_bandeau{width: 100%; height:100%; border-bottom-right-radius: 850% 1560px;
@@ -59,4 +68,6 @@ footer{background-color:var(--main-color);height: 100px; width: 100%; color: whi
   .flexParent{flex-direction: column;width: 100%;align-items: center;}
   .container_bulle{margin-top:0;}
   .bulle_info{box-shadow: 5px 5px 10px var(--grey);}
+  .content_icon span:nth-child(odd){margin-left:-10%;}
+  .content_icon.flexEnd span:nth-child(odd){margin-left:-10%;margin-right:0;}
 }
